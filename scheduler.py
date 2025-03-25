@@ -8,10 +8,10 @@ from gantplot import plot_gantt
 from environment import ThreeMachineEnv
 import os
 
-output_file = 'C:\\Users\\wolfg\\PycharmProjects\\Prozessoptimierung\\utilization_output.xlsx'
+output_file = '.\\PycharmProjects\\Prozessoptimierung\\utilization_output.xlsx'
 model_save_dir = "./ppo_models/"
 
-orderspath = "C:\\Users\\wolfg\\PycharmProjects\\Prozessoptimierung\\Otherorders\\"
+orderspath = ".\\PycharmProjects\\Prozessoptimierung\\Otherorders\\"
 dateien = [f for f in os.listdir(orderspath) if os.path.isfile(os.path.join(orderspath, f))]
 
 best_model_path = os.path.join(model_save_dir, "best_model.zip")
